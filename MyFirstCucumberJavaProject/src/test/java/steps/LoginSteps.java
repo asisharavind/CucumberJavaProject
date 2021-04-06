@@ -24,7 +24,7 @@ public class LoginSteps {
 		if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
 
 			System.setProperty("webdriver.chrome.driver",
-					"D:\\Selenium\\Project\\MyFirstCucumberJavaProject\\chromedriver.exe");
+					"C:\\Users\\asish\\git\\CucumberJavaProject\\MyFirstCucumberJavaProject\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 		}
