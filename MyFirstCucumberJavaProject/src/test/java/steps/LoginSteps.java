@@ -19,14 +19,15 @@ public class LoginSteps {
 	public void setUp() {
 
 		System.out.println("user is inside set up-1");
+		System.out.println("===="+System.getProperty("browser"));
 
-//		if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
-//
-//			System.setProperty("webdriver.chrome.driver",
-//					"D:\\Selenium\\Project\\MyFirstCucumberJavaProject\\chromedriver.exe");
-//			driver = new ChromeDriver();
-//
-//		}
+		if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
+
+			System.setProperty("webdriver.chrome.driver",
+					"D:\\Selenium\\Project\\MyFirstCucumberJavaProject\\chromedriver.exe");
+			driver = new ChromeDriver();
+
+		}
 
 	}
 
@@ -34,9 +35,9 @@ public class LoginSteps {
 	public void enterUsernamePwd() {
 
 		System.out.println("user is inside username and password-1");
-//		driver.get(System.getProperty("url"));
-//		driver.findElement(By.name("q")).sendKeys("asish aravind");
-//		System.out.println("Google search- asish aravind ");
+		driver.get(System.getProperty("url"));
+		driver.findElement(By.name("q")).sendKeys("asish aravind");
+		System.out.println("Google search- asish aravind ");
 	}
 
 	@And("clicks on login button1")
